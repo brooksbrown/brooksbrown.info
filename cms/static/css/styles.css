@@ -1,0 +1,237 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+h1, h2, h3 {
+  letter-spacing: -2px;
+  font-family: 'PT Serif', serif; 
+  font-weight: 500;
+  color: #0285CE;
+}
+
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited {
+  color: #0285CE;
+}
+
+h1 {
+  font-size: 2em;
+  line-height:1;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p, ul, ol {
+  line-height: 1.44em;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0285CE;
+}
+
+a:visited {
+  color: #0285CE;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #3B3B3B;
+  margin: 0;
+  padding 0;
+  background: #FFFFFF;
+}
+
+section#col1 {
+  width:33%;
+  float:left;
+  position:fixed;
+}
+
+section#col2 {
+  width:66%;
+  float:right;
+}
+
+section#col1 header {
+  margin: 3em;
+}
+
+
+section#col1 header h1 {
+  text-transform: lowercase;
+  font-size: 2.3em;
+  color: #323030;
+  margin: 0;
+}
+section#col1 header h1 a,
+section#col1 header h1 a:visited {
+  color: #323030;
+}
+
+section#col1 header h1 span {
+  color: #0285CE;
+}
+
+section#col1 header h2 {
+  font-size:1.2em;
+  margin:0;
+}
+
+section#col1 header h2 span,
+section#col1 header h2 span a,
+section#col1 header h2 span a:visited {
+  color: #323030;
+}
+
+section#col1 ul.social-links {
+  margin: 1em 3em;
+  padding: 0;
+}
+
+section#col1 ul.social-links li {
+  margin:0.5em 0em;
+}
+
+section#col1 ul.social-links .email {
+  background-image: url('/static/images/email_32.png');
+  background-repeat: no-repeat;
+  height:32px;
+  width:32px;
+  display:block;
+}
+
+section#col1 ul.social-links .github {
+  background-image: url('/static/images/github_32.png');
+  background-repeat: no-repeat;
+  height:32px;
+  width:32px;
+  display:block;
+}
+
+section#col1 ul.social-links li {
+  cursor:pointer;
+}
+
+
+
+ul.article-list {
+  padding:0;
+  margin:2.2em 0;
+  float:left;
+  margin-right: 3em;
+}
+
+
+ul.article-list > li {
+  margin: 20px 0;
+  clear:both;
+  float:left;
+  width:100%;
+}
+
+ul.article-list > li hr {
+  clear:both;
+  float:left;
+  width:100%;
+}
+
+ul.article-list article {
+  float:left;
+  width:100%;
+}
+
+article h1 {
+  margin:0;
+}
+
+article datetime {
+  font-size:1.1em;
+}
+
+article .tags {
+  margin-left:0;
+  padding:0;
+  width:100%;
+  float:left;
+}
+
+article .tags li {
+  display:inline-block;
+  float:left;
+  margin-left:10px;
+  background-color:#eee;
+  padding:2px;     
+}
+
+article .tags li.label {
+  margin-left:0px;
+  background-color:transparent;
+}
+
+article img {
+  border: 3px solid #333;
+}
+article aside {
+  width: 33%;
+  float:right;
+  margin:3% 0 3% 3%;
+}
+
+
+/* =============================== */
+
+img {
+  width:100%;
+}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+
+  }
+  section#col1,
+  section#col2 {
+    width:100%;
+  }
+
+  h1 {
+    line-height:1;
+  }
+
+  .social-links li {
+    display:inline-block;
+    margin:5px;
+  }
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+  /*	.logo {
+  background: url(logo2x.jpg) no-repeat;
+  background-size: 212px 303px;
+  }*/
+
+}

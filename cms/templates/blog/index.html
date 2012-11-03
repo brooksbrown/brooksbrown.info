@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  {% for article in article_list %}
+    <li>
+    <article>
+      <header>
+        <h1>{{ article.title }}</h1>
+      </header>
+      {{ article.body|safe }}
+    
+    
+    </li>
+  {% endfor %}
+
+{% endblock %}

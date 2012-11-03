@@ -1,0 +1,265 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		margin: 0;
+		padding: 0;
+		background: #FFFFFF;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #3B3B3B;
+	}
+	
+	h1, h2, h3 {
+		margin: 0px;
+		padding: 0px;
+		letter-spacing: -2px;
+		text-transform: uppercase;
+		font-family: 'Arvo', serif;
+		font-weight: normal;
+		color: #0285CE;
+	}
+	
+	
+	h1 {
+		font-size: 2em;
+		line-height:1;
+	}
+	
+	h2 {
+		font-size: 2.4em;
+	}
+	
+	h3 {
+		font-size: 1.6em;
+	}
+	
+	p, ul, ol {
+		margin-top: 0;
+		line-height: 180%;
+	}
+	
+	ul, ol {
+		list-style-type: none;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #0285CE;
+	}
+	
+	a:hover {
+	}
+
+
+	
+	/* Menu */
+	
+	#menu-wrapper {
+		overflow: hidden;
+		height: 56px;
+		background: #EDEDED;
+	}
+	
+	#menu {
+		width: 1000px;
+		height: 55px;
+		margin: 0px auto;
+		padding: 0px;
+	}
+	
+	#menu ul {
+		margin: 0;
+		padding: 0px;
+		list-style: none;
+		line-height: normal;
+	}
+	
+	#menu li {
+		float: left;
+		border-right: 1px solid #FFFFFF;
+	}
+	
+	#menu a {
+		display: block;
+		letter-spacing: 1px;
+		line-height: 55px;
+		padding: 0px 30px;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Arvo', serif;
+		font-size: 14px;
+		font-weight: normal;
+		color: #3B3B3B;
+		border: none;
+	}
+	
+	#menu a:hover, #menu .current_page_item a {
+		background: #0193CC;
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	
+	#menu .current_page_item a {
+		background: #0193CC;
+	}
+
+
+	/* Header */
+	
+	#header-wrapper {
+	}
+	
+	#header {
+		clear: both;
+	}
+	
+	/* Logo */
+	
+	#logo {
+		margin: 0px;
+		padding: 30px 0px;
+		color: #000000;
+	}
+	
+	#logo h1, #logo p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#logo h1 {
+		margin: 0px;
+		padding: 0px;
+		text-transform: lowercase;
+		font-size: 3.8em;
+		color: #323030;
+	}
+	
+	#logo h1 span {
+		color: #0285CE;
+	}
+	
+	#logo h2 {
+		font-size:1.5em;
+	}
+	
+	#logo h2 span,
+	#logo h2 span a {
+		color: #323030;
+	}
+	
+	#logo h3 {
+		font-size:1.5em;
+	}
+	#logo p {
+		margin: 0px;
+		padding: 0px;
+		text-transform: uppercase;
+		font-family: 'Arvo', serif;
+		color: #3B3B3B;
+	}
+	
+	#logo p a {
+		color: #3B3B3B;
+	}
+	
+	#logo a {
+		border: none;
+		background: none;
+		text-decoration: none;
+		color: #323030;
+	}
+	
+	.social-links li {
+		margin:5px 0;
+	}
+	.social-links .email {
+		background-image: url('/static/images/email_32.png');
+		background-repeat: no-repeat;
+		height:32px;
+		width:32px;
+		display:block;
+	}
+	
+	.social-links .gplus {
+		background-image: url('/static/images/google_plus_32.png');
+		background-repeat: no-repeat;
+		height:32px;
+		width:32px;
+		display:block;
+	}
+	
+	.social-links .github {
+		background-image: url('/static/images/github_32.png');
+		background-repeat: no-repeat;
+		height:32px;
+		width:32px;
+		display:block;
+	}
+	
+	.social-links li a {
+		opacity:0.6;
+	}
+	.social-links li a:hover {
+		opacity:0.8;
+	}
+	.social-links li span {
+		display:none;
+	}
+	
+	.credits ul {
+		margin-top:10px;
+		display:block;
+		margin-top:50px;
+	}
+	
+	.credits ul li {
+		font-size: 0.7em;
+		margin: 0;
+		line-height:1;
+		float:right;
+		clear:right;
+	}
+	
+	#cpi-chart {
+	    overflow:auto;
+	}
+	#cpi-chart table {
+	    display:none;
+	}
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+	
+	h1 {
+		line-height:1;
+	}
+  
+	.social-links li {
+	    display:inline-block;
+	    float:left;
+	    margin:5px;
+	}
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
