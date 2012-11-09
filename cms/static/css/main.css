@@ -137,7 +137,8 @@ strong {
 }
 
 blockquote {
-    margin: 1em 40px;
+    margin:0em;
+    font-family: 'PT Serif', serif;
 }
 
 dfn {

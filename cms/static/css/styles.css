@@ -63,6 +63,8 @@ section#col1 {
 section#col2 {
   width:66%;
   float:right;
+  margin: 1.5%;
+  margin-top: 3.3em;
 }
 
 section#col1 header {
@@ -72,7 +74,7 @@ section#col1 header {
 
 section#col1 header h1 {
   text-transform: lowercase;
-  font-size: 2.3em;
+  font-size: 2em;
   color: #323030;
   margin: 0;
 }
@@ -193,9 +195,6 @@ article aside {
 
 /* =============================== */
 
-img {
-  width:100%;
-}
 
 
 /* ============================= */
