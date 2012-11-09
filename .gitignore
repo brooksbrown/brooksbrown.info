@@ -1,5 +1,5 @@
 Vagrantfile
 vagrant
 Vagrant
-.*.pyc
+*.pyc
 venv
