@@ -18,6 +18,7 @@ class Article(models.Model):
   pub_date = models.DateTimeField('date published')
   body = models.TextField()
   terms = models.ManyToManyField(ArticleTerm)
+  published = models.BooleanField()
   def __unicode__(self):
     return self.title
 
