@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^$', 'blog.views.index'),
+    url(r'^article/(?P<slug>[-\w\d]+),(?P<article_id>\d+)$', 'blog.views.article'),
 )
 
 
