@@ -208,7 +208,17 @@ article aside {
   }
   section#col1,
   section#col2 {
-    width:100%;
+    width:96%;
+    float:left;
+    clear:left;
+    margin:0 2%;
+    position:relative;
+
+  }
+  
+  section#col1 header {
+    margin:0;
+    height:50px;
   }
 
   h1 {
