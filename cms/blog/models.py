@@ -19,6 +19,7 @@ class Article(models.Model):
   body = models.TextField()
   terms = models.ManyToManyField(ArticleTerm)
   published = models.BooleanField()
+ 
   def __unicode__(self):
     return self.title
 

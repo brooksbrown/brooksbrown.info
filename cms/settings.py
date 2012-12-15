@@ -3,6 +3,7 @@ import os
 import MySQLdb
 
 os.environ['DJANGO_SETTINGS_MODULE'] = "cms.settings"
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -12,7 +13,6 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-from databasesettings import DATABASES
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -152,3 +152,5 @@ LOGGING = {
     }
 }
 
+
+from localsettings import *
